@@ -1,0 +1,30 @@
+{
+	"name": "langware-assignment-2",
+	"module": "index.ts",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"start": "bun src/index.ts",
+		"build": "bun build src/index.ts --outdir dist",
+		"check:fix": "bun run biome check --fix",
+		"db:generate": "drizzle-kit generate",
+		"db:migrate": "bun run src/db/index.ts",
+		"db:drop": "drizzle-kit drop"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@types/bun": "latest",
+		"@types/minimist": "^1.2.5",
+		"drizzle-kit": "^0.31.0"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"dependencies": {
+		"cheerio": "^1.0.0",
+		"commander": "^13.1.0",
+		"consola": "^3.4.2",
+		"drizzle-orm": "^0.43.1",
+		"minimist": "^1.2.8"
+	}
+}
