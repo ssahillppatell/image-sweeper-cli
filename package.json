@@ -14,7 +14,6 @@
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
 		"@types/bun": "latest",
-		"@types/minimist": "^1.2.5",
 		"drizzle-kit": "^0.31.0"
 	},
 	"peerDependencies": {
@@ -24,7 +23,6 @@
 		"cheerio": "^1.0.0",
 		"commander": "^13.1.0",
 		"consola": "^3.4.2",
-		"drizzle-orm": "^0.43.1",
-		"minimist": "^1.2.8"
+		"drizzle-orm": "^0.43.1"
 	}
 }
